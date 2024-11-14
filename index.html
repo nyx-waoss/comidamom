@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convenciendo a Mamá</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="historia" class="texto">
+      <p>Hola, querida madre... tengo una importante pregunta para ti...</p>
+      <button onclick="siguiente()">Siguiente</button>
+    </div>
+
+    <div id="pregunta" class="texto oculto">
+      <p>Espero que aceptes mi propuesta, plis...</p>
+      <button onclick="siguiente()">Siguiente</button>
+    </div>
+
+    <div id="propuesta" class="texto oculto">
+      <p>¿Podemos comer algo de afuera, como una deliciosa pizza de Papa John's o una hamburguesa de QBurger? 🍔🍕</p>
+      <button onclick="jugar()">Jugar para decidir</button>
+    </div>
+
+    <div id="juego" class="juego oculto">
+      <p>Toca la pizza o hamburguesa 5 veces para que se quede en casa 😉</p>
+      <img src="pizza.jpg" alt="Pizza" id="comida" onclick="atrapar()">
+      <p id="contador">Veces atrapada: 0/5</p>
+    </div>
+
+    <div id="resultado" class="texto oculto"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
